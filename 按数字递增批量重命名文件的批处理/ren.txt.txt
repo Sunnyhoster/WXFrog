@@ -1,6 +1,6 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
-set /A num=10
+set /A num=73150
 FOR /F "tokens=*" %%i in ('dir /A-D /B /OD /TC') do (
     IF NOT "%%i"=="%~n0%~x0" (
         set /A num+=1
@@ -17,6 +17,7 @@ FOR /F "tokens=*" %%i in ('dir /A-D /B /OD /TC') do (
 			 ren "%%i" 0!num!%%~xi
 			) ELSE (
 			    if !num! LSS 100000 ren "%%i" !num!%%~xi 
+		      £©
                 )
             )
         )
