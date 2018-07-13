@@ -17,7 +17,7 @@ FOR /F "tokens=*" %%i in ('dir /A-D /B /OD /TC') do (
 			 ren "%%i" 0!num!%%~xi
 			) ELSE (
 			    if !num! LSS 100000 ren "%%i" !num!%%~xi 
-		      £©
+		     )
                 )
             )
         )
